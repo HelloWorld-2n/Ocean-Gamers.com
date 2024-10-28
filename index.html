@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<<<<<<< HEAD
+    <meta name="viewport" content="width=device-width, initial-scale=0.4">
+
+
+    <title>MAAHI TUTORIAL</title>
+    <link rel="stylesheet" href="All CSS/index style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Ocean Gamers" style="height: 60px;">
+            <h1 style="display: inline;color:cyan; margin-left: 10px;">OCEAN GAMERS</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="gm-hub.html" class="btn-result">GAMES</a></li> <!-- Added Result Button -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h2>Welcome to MAAHI TUTORIAL</h2>
+            <P>SEEKHNA CHAHE KAHIN SE, SAFALTA YAHIN MILEGI</P>
+        </section>
+        <section class="welcome-section">
+            <h3>YOUR PARTNER IN ACADEMIC SUCCESS</h3>
+            <p>In a competitive world, dedicated mentors are a must. MAAHI TUTORIAL exists to provide guidance and empowerment for the leaders and innovators of the future. We strive for our students to bridge the gap between what they have achieved so far and what they aspire to achieve, finally fulfilling dreams in both their personal and professional lives.</p>
+            <p>We shall put out good education as some of the hallmarks of an environment that provides holistic development and nurtures talent.</p>
+            <p>A proper craft does not take place without effort and commitment, and MAAHI TUTORIAL helps students discover their unique strengths, enhance self-esteem, and make aspirations to reality. Every remarkable journey begins with a single step. First, self-confidence must be cultivated to conquer life's obstacles.</p>
+            <p>Take the first step on the road to a brighter, more fulfilling future with us!</p>
+        </section>
+        
+        <section class="top-section">
+            <div class="top-container">
+                <div class="top-left">
+                    <img src="top1.jpg" alt="Teacher 1">
+                    <p>By:- Er.Rawish Sir</p>
+                </div>
+    
+                <div class="top-right">
+                    <img src="top2.jpg" alt="Teacher 2">
+                    <p>Teacher 2</p>
+                </div>
+    
+                <div class="top-left">
+                    <img src="top3.jpg" alt="Teacher 3">
+                    <p>Teacher 3</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>
+                    Opp.Smart Bazar, 
+                    Bailey Road,Near, 
+                    Pillar No.-21, Patna-14
+                </p>
+                <p>Patna - 800014</p>
+                <p>Phone: +91-9608552723</p>
+                
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MAAHI TUTORIAL. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    
+=======
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Play Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Play Store</h1>
+        <input type="text" placeholder="Search apps & games..." class="search-bar" id="searchInput">
+        <nav>
+            <a href="apps.html">Apps</a>
+            <a href="games.html">Games</a>
+            <a href="categories.html">Categories</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="featured-section">
+            <h2>Featured Apps</h2>
+            <div class="app-grid" id="appGrid">
+                <div class="app-card">
+                    <img src="app1.png" alt="App 1">
+                    <h3>App 1</h3>
+                    <p>⭐ 4.5</p>
+                    <p>Short description of App 1.</p>
+                    <a href="app-details.html" class="details-button">See Details</a>
+                    <a href="https://www.mediafire.com/file/p1feo2xu2u05x9n/app1.apk.apk/file"target="_blank" class="download-button">Download</a> <!-- Download button -->
+                </div>
+                <div class="app-card">
+                    <img src="images/featured-app2.png" alt="App 2">
+                    <h3>App 2</h3>
+                    <p>⭐ 4.4</p>
+                    <p>Short description of App 2.</p>
+                    <a href="app-details.html" class="details-button">See Details</a>
+                    <a href="downloads/app1.apk" class="download-button">Download</a> <!-- Download button -->
+                </div>
+                <!-- Additional app cards here -->
+            </div>
+        </section>
+        
+        <section class="top-rated">
+            <h2>Top Rated Games</h2>
+            <div class="app-grid" id="gameGrid">
+                <div class="app-card">
+                    <img src="images/top-game1.png" alt="Game 1">
+                    <h3>Game 1</h3>
+                    <p>⭐ 4.8</p>
+                    <p>Short description of Game 1.</p>
+                    <a href="game-details.html" class="details-button">See Details</a>
+                    <a href="downloads/app1.apk" class="download-button">Download</a> <!-- Download button -->
+                </div>
+                <div class="app-card">
+                    <img src="images/top-game2.png" alt="Game 2">
+                    <h3>Game 2</h3>
+                    <p>⭐ 4.6</p>
+                    <p>Short description of Game 2.</p>
+                    <a href="game-details.html" class="details-button">See Details</a>
+                    <a href="downloads/app1.apk" class="download-button">Download</a> <!-- Download button -->
+                </div>
+                <!-- Additional game cards here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript for Search Functionality -->
+    <script>
+        // Select search bar and app/game grids
+        const searchInput = document.getElementById('searchInput');
+        const appGrid = document.getElementById('appGrid');
+        const gameGrid = document.getElementById('gameGrid');
+
+        // Add event listener for search input
+        searchInput.addEventListener('input', () => {
+            const query = searchInput.value.toLowerCase();
+
+            // Filter featured apps
+            Array.from(appGrid.children).forEach(appCard => {
+                const appName = appCard.querySelector('h3').textContent.toLowerCase();
+                const appDesc = appCard.querySelector('p').textContent.toLowerCase();
+                appCard.style.display = (appName.includes(query) || appDesc.includes(query)) ? '' : 'none';
+            });
+
+            // Filter top-rated games
+            Array.from(gameGrid.children).forEach(gameCard => {
+                const gameName = gameCard.querySelector('h3').textContent.toLowerCase();
+                const gameDesc = gameCard.querySelector('p').textContent.toLowerCase();
+                gameCard.style.display = (gameName.includes(query) || gameDesc.includes(query)) ? '' : 'none';
+            });
+        });
+    </script>
+>>>>>>> 4441fd22d9660384922c84bb1ff9f6cc92c2fb6b
+</body>
+</html>

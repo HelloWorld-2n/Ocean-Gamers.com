@@ -1,0 +1,17 @@
+cd "C:\Users\Hp\Desktop\Ocean website"
+git statusOcean-Gamers.com
+git add .
+git commit -m "Updated website with [description of changes]"
+git push origin masterOcean-Gamers.com
+Ocean-Gamers.com
+
+
+
+git init
+git add
+git commit -m 
+git branch -M main
+git remote add origin git@github.com:HelloWorld-2n/Ocean-Gamers.com.git
+git push -u origin main
+
+C:\Users\Hp\Desktop\Ocean website
