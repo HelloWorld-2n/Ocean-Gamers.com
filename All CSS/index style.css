@@ -298,6 +298,38 @@ nav ul li a.btn-result:hover {
     background-color: #e5533d; /* Hover effect for result button */
 }
 
+
+/* game Button Style */
+.btn-game {
+    background-color: #5947ff; /* Background color for the button (Tomato color) */
+    border: 2px solid #5947ff; /* Border to define the button */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding for the button look */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Make the text bold */
+    text-align: center;
+}
+
+/* Hover effect for the game button */
+.btn-game:hover {
+    background-color: #3d56e5; /* Slightly darker hover effect */
+    border-color: #3d56e5; /* Change the border on hover */
+    color: #ffffff; /* Keep the text color on hover */
+}
+
+/* Ensure buttons are clickable */
+.btn-game:active {
+    transform: scale(0.98); /* Button click effect */
+}
+
+nav ul li a.btn-game {
+    background-color: #5947ff; /* Different color for the game button */
+}
+
+nav ul li a.btn-game:hover {
+    background-color: #3d56e5; /* Hover effect for game button */
+}
+
 /* Image Gallery Styles */
 .image-gallery {
     display: flex;
