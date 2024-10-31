@@ -8,7 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #e0f7fa; /* Light blue background for ocean feel */
     color: #333;
 }
 
@@ -16,13 +16,14 @@ header {
     display: flex;
     justify-content: space-between; /* Space between logo and nav */
     align-items: center; /* Center items vertically */
-    background: #333;
+    background: #006064; /* Teal background for the header */
     color: #fff;
     padding: 10px 20px; /* Add padding for spacing */
 }
 
 header .logo h1 {
     margin: 0;
+    font-size: 24px; /* Adjusted font size for better visibility */
 }
 
 nav ul {
@@ -37,18 +38,19 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ffffff; /* White color for links */
     text-decoration: none;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline on hover */
 }
+
 /* Result Button Style */
 .btn-result {
-    background-color: #FF6347; /* Background color for the button (Tomato color) */
-    border: 2px solid #FF6347; /* Border to define the button */
+    background-color: #00bcd4; /* Bright cyan for buttons */
+    border: 2px solid #00acc1; /* Darker cyan for borders */
     color: white; /* Text color */
     padding: 10px 20px; /* Padding for the button look */
     border-radius: 5px; /* Rounded corners */
@@ -58,8 +60,8 @@ nav ul li a:hover {
 
 /* Hover effect for the result button */
 .btn-result:hover {
-    background-color: #e5533d; /* Slightly darker hover effect */
-    border-color: #e5533d; /* Change the border on hover */
+    background-color: #0097a7; /* Darker cyan hover effect */
+    border-color: #00838f; /* Darker border on hover */
     color: #ffffff; /* Keep the text color on hover */
 }
 
@@ -69,13 +71,12 @@ nav ul li a:hover {
 }
 
 nav ul li a.btn-result {
-    background-color: #FF6347; /* Different color for the result button */
+    background-color: #00bcd4; /* Same color for result button */
 }
 
 nav ul li a.btn-result:hover {
-    background-color: #e5533d; /* Hover effect for result button */
+    background-color: #0097a7; /* Hover effect for result button */
 }
-
 
 main {
     padding: 20px;
@@ -83,17 +84,16 @@ main {
     margin-bottom: 10px; /* Added margin to separate footer */
 }
 
-
-
 /* Contact Form */
 form {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.9); /* Slightly more opaque white */
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgb(0, 183, 255);
+    box-shadow: 0 0 15px rgba(0, 183, 255, 0.5); /* Softer blue shadow */
     max-width: 600px;
     margin: 50px auto;
     text-align: left;
+    border: 1px solid #00bcd4; /* Add a cyan border for visual appeal */
 }
 
 form label {
@@ -110,10 +110,18 @@ form textarea {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    transition: border 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="phone"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border: 1px solid #00bcd4; /* Change border color on focus */
 }
 
 form input[type="submit"] {
-    background: #333;
+    background: #006064; /* Teal for submit button */
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -123,13 +131,13 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background: #555;
+    background: #004d40; /* Darker teal on hover */
 }
-
 
 .footer-bottom {
     text-align: center; /* Center the copyright text */
     font-size: 10px; /* Smaller font size */
-    background-color: #000000;
+    background-color: #004d40; /* Darker teal for footer */
     color: #ffffff;
+    padding: 10px 0; /* Padding for footer */
 }

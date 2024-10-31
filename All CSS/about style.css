@@ -1,4 +1,4 @@
- /* Global Styles */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #e0f7fa; /* Light blue background for ocean feel */
     color: #333;
 }
 
@@ -16,7 +16,7 @@ header {
     display: flex;
     justify-content: space-between; /* Space between logo and nav */
     align-items: center; /* Center items vertically */
-    background: #333;
+    background: #006064; /* Teal background for the header */
     color: #fff;
     padding: 10px 20px; /* Add padding for spacing */
 }
@@ -37,53 +37,53 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #fff; /* White color for links */
     text-decoration: none;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline on hover */
 }
-
 
 /* Result Button Style */
 .btn-result {
-    background-color: #FF6347; /* Background color for the button (Tomato color) */
-    border: 2px solid #FF6347; /* Border to define the button */
+    background-color: #00bcd4; /* Bright cyan for buttons */
+    border: 2px solid #00acc1; /* Darker cyan for borders */
     color: white; /* Text color */
     padding: 10px 20px; /* Padding for the button look */
     border-radius: 5px; /* Rounded corners */
     font-weight: bold; /* Make the text bold */
     text-align: center;
 }
+
 /* Hover effect for the result button */
 .btn-result:hover {
-    background-color: #e5533d; /* Slightly darker hover effect */
-    border-color: #e5533d; /* Change the border on hover */
-    color: #ffffff; /* Keep the text color on hover */
+    background-color: #0097a7; /* Darker cyan hover effect */
+    border-color: #00838f; /* Darker border on hover */
 }
+
 /* Ensure buttons are clickable */
 .btn-result:active {
     transform: scale(0.98); /* Button click effect */
 }
+
 nav ul li a.btn-result {
-    background-color: #FF6347; /* Different color for the result button */
+    background-color: #00bcd4; /* Same color for result button */
 }
+
 nav ul li a.btn-result:hover {
-    background-color: #e5533d; /* Hover effect for result button */
+    background-color: #0097a7; /* Hover effect for result button */
 }
-
-
 
 /* About Section Styling */
 .about-section {
     max-width: 1200px;
     margin: 40px auto;
     padding: 40px;
-    background-color: #f5f5f5;
+    background-color: rgba(255, 255, 255, 0.8); /* White with transparency for ocean feel */
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 183, 255, 0.2); /* Soft blue shadow */
 }
 
 .about-section h1 {
@@ -136,6 +136,7 @@ nav ul li a.btn-result:hover {
 .footer-bottom {
     text-align: center; /* Center the copyright text */
     font-size: 10px; /* Smaller font size */
-    background-color: #000000;
+    background-color: #004d40; /* Darker teal for footer */
     color: #ffffff;
+    padding: 10px 0; /* Padding for footer */
 }

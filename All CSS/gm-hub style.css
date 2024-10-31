@@ -8,17 +8,23 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #0f0f1f; /* Dark ocean-inspired background */
+    color: #ffffff;
 }
 
+/* Header */
 header {
     display: flex;
-    justify-content: space-between; /* Space between logo and nav */
-    align-items: center; /* Center items vertically */
-    background: #333;
-    color: #fff;
-    padding: 10px 20px; /* Add padding for spacing */
+    justify-content: space-between;
+    align-items: center;
+    background: #1a1a3d;
+    color: #00ffff;
+    padding: 10px 20px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.logo {
+    flex: 1; /* Allow the logo to take full width */
 }
 
 nav ul {
@@ -26,92 +32,169 @@ nav ul {
     justify-content: center;
     padding: 0;
     list-style: none;
-    width: 500px;
 }
+
 nav ul li {
     margin: 0 15px;
 }
+
 nav ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background 0.3s;
 }
+
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #3333ff;
 }
-
-
 
 /* Result Button Style */
 .btn-result {
-    background-color: #FF6347; /* Background color for the button (Tomato color) */
-    border: 2px solid #FF6347; /* Border to define the button */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Padding for the button look */
-    border-radius: 5px; /* Rounded corners */
-    font-weight: bold; /* Make the text bold */
+    background-color: #FF6347;
+    border: 2px solid #FF6347;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
     text-align: center;
 }
-/* Hover effect for the result button */
+
 .btn-result:hover {
-    background-color: #e5533d; /* Slightly darker hover effect */
-    border-color: #e5533d; /* Change the border on hover */
-    color: #ffffff; /* Keep the text color on hover */
-}
-/* Ensure buttons are clickable */
-.btn-result:active {
-    transform: scale(0.98); /* Button click effect */
-}
-nav ul li a.btn-result {
-    background-color: #FF6347; /* Different color for the result button */
-}
-nav ul li a.btn-result:hover {
-    background-color: #e5533d; /* Hover effect for result button */
+    background-color: #e5533d;
 }
 
-
+/* Main */
 main {
     padding: 20px;
     text-align: center;
-    margin-bottom: 10px; /* Added margin to separate footer */
+    margin-bottom: 10px;
 }
 
 .search-bar {
-    padding: 8px;
+    padding: 10px;
     border-radius: 20px;
-    border: 1px solid #ddd;
-    width: 100%;
+    border: 1px solid #3333ff;
+    width: 80%; /* Smaller width for centered alignment */
+    margin: 20px auto;
     font-size: 1rem;
+    background-color: #1a1a3d;
+    color: #ffffff;
 }
+
+/* Top App Section */
 .top-app {
     font-weight: bold;
-    text-align: left;
-    color: rgb(88, 78, 78);
+    text-align: center;
+    color: #4caf50;
 }
-/* games Section */
+
+/* Games Section */
 .game-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     padding: 20px;
 }
 
 .game-item {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.9); /* Subtle shadow for depth */
+    background-color: #1a1a3d;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 183, 255, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.game-item h1 {
+    color: #00ffff;
+    font-size: 18px;
+    margin: 10px 0;
 }
 
 .game-item img {
     width: 100%;
-    height: 200px; /* Set a fixed height for uniformity */
-    object-fit: cover; /* Ensures images cover the area without distortion */
-    border-radius: 5px;
+    height: auto; /* Changed to auto for responsiveness */
+    max-height: 200px; /* Maintain maximum height */
+    object-fit: cover;
+    border-radius: 8px;
     cursor: pointer;
-    transition: transform 0.3s ease; /* Smooth scale effect */
+    transition: transform 0.3s;
 }
 
 .game-item img:hover {
-    transform: scale(1.05); /* Scale effect on hover */
+    transform: scale(1.05);
 }
+
+.game-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 183, 255, 0.8);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack items on top of each other */
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        width: 100%; /* Full width for navigation */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add space between items */
+    }
+
+    .search-bar {
+        width: 90%; /* Increase width for mobile */
+    }
+
+    .game-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust grid for smaller screens */
+    }
+
+    .game-item {
+        padding: 10px; /* Reduce padding for mobile */
+    }
+}
+
+
+
+/* Adjustments for mobile */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack logo and title on top */
+        align-items: center; /* Center items */
+        text-align: center; /* Center text */
+    }
+
+    .logo {
+        margin-bottom: 10px; /* Space below the logo */
+    }
+
+    nav {
+        width: 100%; /* Full width for navigation */
+    }
+
+    nav ul {
+        justify-content: flex-end; /* Align items to the right */
+        width: 100%; /* Full width for ul */
+        padding: 0; /* Remove default padding */
+    }
+
+    nav ul li {
+        margin: 0 10px; /* Adjust spacing between links */
+    }
+    .game-item h1 {
+        font-size: 16px; /* Smaller font size for mobile */
+    }
+
+    .search-bar {
+        padding: 8px; /* Smaller padding */
+    }
+}
+

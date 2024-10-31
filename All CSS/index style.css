@@ -7,69 +7,33 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #0a0a0a; /* Dark theme */
+    color: #00e6e6; /* Neon cyan text */
 }
 
 header {
     display: flex;
-    justify-content: space-between; /* Space between logo and nav */
-    align-items: center; /* Center items vertically */
-    background: #333;
+    align-items: center;
+    background: #151515; /* Dark header */
     color: #fff;
-    padding: 10px 20px; /* Add padding for spacing */
-}
-
-header .logo h1 {
-    margin: 0;
-}
-
-.top-section {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     padding: 20px;
+    justify-content: space-between;
 }
 
-.top-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 80%;
+header h1 {
+    color: #00ffff;
+    font-size: 38px;
+    margin-left: 20px;
 }
 
-.top {
-    width: 30%;
-    margin: 10px;
-    text-align: center;
+.logo-img {
+    height: 70px;
+    width: 90px;
+    margin-right: 20px;
 }
-
-.top img {
-    width: 80%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.top p {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-.top-left {
-    order: 1;
-}
-
-.top-right {
-    order: 2;
-}
-
 
 nav ul {
     display: flex;
-    justify-content: center;
-    padding: 0;
     list-style: none;
 }
 
@@ -78,284 +42,94 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #00e6e6;
     text-decoration: none;
     font-weight: bold;
 }
 
 nav ul li a:hover {
+    color: #ffffff;
     text-decoration: underline;
 }
 
 main {
     padding: 20px;
     text-align: center;
-    margin-bottom: 10px; /* Added margin to separate footer */
 }
 
-footer {
-    background-color: #ffffff; /* Dark background color for contrast */
-    color: rgb(0, 0, 0); /* Text color */
-    padding: 10px 20px; /* Smaller padding */
-    position: relative; /* Positioning */
-    width: 100%; /* Full width */
-    margin-top: 10px;
+.welcome {
+    color: #00e6e6;
 }
 
-.footer-container {
-    display: flex; /* Flexbox layout */
-    justify-content: space-between; /* Space between sections */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    margin-bottom: 10px; /* Space below the container */
+.welcome h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
 }
 
-.footer-section {
-    flex: 1; /* Equal space for each section */
-    min-width: 200px; /* Minimum width */
-    margin: 0 10px; /* Margin for spacing */
-}
-
-.footer-section p{
-    font-size: 18px;
-    line-height: 1.6;
-    color: #000000;
-    text-align: center;
-}
-
-.footer-section h3 {
-    color: #0099ff;
-    text-align: center; 
-}
-
-.footer-bottom {
-    text-align: center; /* Center the copyright text */
-    font-size: 10px; /* Smaller font size */
-    background-color: #000000;
+.welcome p {
+    font-size: 20px;
     color: #ffffff;
-}
-
-/* About, Services */
-h2 {
-    font-size: 24px;
     margin-bottom: 20px;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-/* Albums Section */
-.album-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
-    gap: 20px;
-    padding: 20px;
-}
-
-.album-item {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.9); /* Subtle shadow for depth */
-}
-
-.album-item h3 {
-    margin-top: 0; /* Remove top margin */
-}
-
-.album-item img {
-    width: 100%;
-    height: 200px; /* Set a fixed height for uniformity */
-    object-fit: cover; /* Ensures images cover the area without distortion */
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.3s ease; /* Smooth scale effect */
-}
-
-.album-item img:hover {
-    transform: scale(1.05); /* Scale effect on hover */
-}
-
-/* Welcome Section */
 .welcome-section {
-    background-color: #f9f9f9; /* Light background for contrast */
-    padding: 40px 20px; /* Padding for the section */
-    text-align: center; /* Center the text */
-}
-
-.welcome-section h2 {
-    font-size: 40px; /* Size for the main heading */
-    margin-bottom: 10px; /* Space below the heading */
+    background-color: #101010;
+    padding: 30px;
+    color: #00ffcc;
+    border: 2px solid #333;
 }
 
 .welcome-section h3 {
-    font-size: 24px; /* Size for the subheading */
-    margin-bottom: 20px; /* Space below the subheading */
-    color: #4CAF50; /* Use a distinct color for the subheading */
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 .welcome-section p {
-    font-size: 16px; /* Font size for paragraphs */
-    line-height: 1.6; /* Line height for readability */
-    margin-bottom: 15px; /* Space below each paragraph */
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-/* Contact Form */
-form {
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgb(0, 183, 255);
-    max-width: 600px;
-    margin: 50px auto;
-    text-align: left;
-}
-
-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-form input[type="text"],
-form input[type="phone"],
-form input[type="email"],
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form input[type="submit"] {
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-form input[type="submit"]:hover {
-    background: #555;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column; /* Stack navigation links */
-    }
-
-    .album-gallery {
-        grid-template-columns: 1fr; /* Single column layout for small screens */
-    }
-
-    header {
-        text-align: left; /* Align logo to the left */
-        padding: 10px; /* Adjust padding */
-    }
-
-    footer {
-        position: relative; /* Change footer position */
-    }
-}
-
-/* Result Button Style */
-.btn-result {
-    background-color: #FF6347; /* Background color for the button (Tomato color) */
-    border: 2px solid #FF6347; /* Border to define the button */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Padding for the button look */
-    border-radius: 5px; /* Rounded corners */
-    font-weight: bold; /* Make the text bold */
-    text-align: center;
-}
-
-/* Hover effect for the result button */
-.btn-result:hover {
-    background-color: #e5533d; /* Slightly darker hover effect */
-    border-color: #e5533d; /* Change the border on hover */
-    color: #ffffff; /* Keep the text color on hover */
-}
-
-/* Ensure buttons are clickable */
-.btn-result:active {
-    transform: scale(0.98); /* Button click effect */
-}
-
-nav ul li a.btn-result {
-    background-color: #FF6347; /* Different color for the result button */
-}
-
-nav ul li a.btn-result:hover {
-    background-color: #e5533d; /* Hover effect for result button */
-}
-
-
-/* game Button Style */
-.btn-game {
-    background-color: #5947ff; /* Background color for the button (Tomato color) */
-    border: 2px solid #5947ff; /* Border to define the button */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Padding for the button look */
-    border-radius: 5px; /* Rounded corners */
-    font-weight: bold; /* Make the text bold */
-    text-align: center;
-}
-
-/* Hover effect for the game button */
-.btn-game:hover {
-    background-color: #3d56e5; /* Slightly darker hover effect */
-    border-color: #3d56e5; /* Change the border on hover */
-    color: #ffffff; /* Keep the text color on hover */
-}
-
-/* Ensure buttons are clickable */
-.btn-game:active {
-    transform: scale(0.98); /* Button click effect */
-}
-
-nav ul li a.btn-game {
-    background-color: #5947ff; /* Different color for the game button */
-}
-
-nav ul li a.btn-game:hover {
-    background-color: #3d56e5; /* Hover effect for game button */
-}
-
-/* Image Gallery Styles */
-.image-gallery {
+.top-section {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 20px;
 }
 
-img {
-    max-width: 100%;
+.top-container {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+}
+
+.top img {
+    width: 100%;
     height: auto;
-}
-
-.image-container {
-    text-align: center;
-    margin: 10px;
-}
-
-.image-container img {
-    height: 400px;
-    width: auto;
-    object-fit: cover;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: transform 0.3s;
 }
 
-.image-container img:hover {
+.top img:hover {
     transform: scale(1.05);
+}
+
+.footer-bottom {
+    background: #151515;
+    color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+.btn-result, .btn-game {
+    background-color: #00cc99;
+    border: 1px solid #00cc99;
+    color: #000000;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-result:hover, .btn-game:hover {
+    background-color: #009977;
+    color: #ffffff;
 }
