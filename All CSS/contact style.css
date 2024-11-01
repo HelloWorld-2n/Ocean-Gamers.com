@@ -86,19 +86,19 @@ main {
 
 /* Contact Form */
 form {
-    background: rgba(255, 255, 255, 0.9); /* Slightly more opaque white */
+    background: rgba(255, 255, 255, 0.8); /* White with transparency for ocean feel */
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 15px rgba(0, 183, 255, 0.5); /* Softer blue shadow */
+    box-shadow: 0 0 10px rgba(0, 183, 255, 0.5); /* Soft blue shadow */
     max-width: 600px;
     margin: 50px auto;
     text-align: left;
-    border: 1px solid #00bcd4; /* Add a cyan border for visual appeal */
 }
 
 form label {
     display: block;
     margin-bottom: 5px;
+    font-weight: bold; /* Bold labels for better visibility */
 }
 
 form input[type="text"],
@@ -110,14 +110,6 @@ form textarea {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    transition: border 0.3s;
-}
-
-form input[type="text"]:focus,
-form input[type="phone"]:focus,
-form input[type="email"]:focus,
-form textarea:focus {
-    border: 1px solid #00bcd4; /* Change border color on focus */
 }
 
 form input[type="submit"] {
@@ -134,10 +126,90 @@ form input[type="submit"]:hover {
     background: #004d40; /* Darker teal on hover */
 }
 
+/* New Styles for Additional Sections */
+.quick-links, .contact-info {
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.7); /* White background for sections */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 183, 255, 0.5); /* Soft blue shadow */
+}
+
+.quick-links h2, .contact-info h2 {
+    margin-bottom: 10px;
+}
+
+.quick-links ul, .contact-info ul {
+    list-style: none;
+}
+
+.quick-links ul li, .contact-info p {
+    margin: 5px 0;
+}
+
+.social-media {
+    margin: 20px 0;
+}
+/* Additional Styles for Quick Links and Contact Info */
+.info-container {
+    display: flex;
+    justify-content: space-between; /* Aligns quick links and contact info to the sides */
+    margin-top: 30px;
+    max-width: 1200px; /* Maximum width for the container */
+    margin: 30px auto; /* Center the container */
+}
+
+.quick-links, .contact-info {
+    background: rgba(0, 128, 128, 0.7); /* Teal background for the sections */
+    color: #fff; /* White text color */
+    padding: 20px; /* Padding inside the sections */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 183, 255, 0.5); /* Soft blue shadow */
+    width: 48%; /* Make sections take up nearly half the container */
+}
+
+.quick-links h2, .contact-info h2 {
+    margin-bottom: 15px; /* Space between title and content */
+}
+
+.quick-links ul, .contact-info p {
+    list-style: none; /* Remove bullet points */
+}
+
+.quick-links ul li, .contact-info p {
+    margin: 10px 0; /* Space between items */
+}
+
+.quick-links a, .contact-info a {
+    color: #ffffff; /* White color for links */
+    text-decoration: none; /* No underline */
+}
+
+.quick-links a:hover, .contact-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Other Existing Styles */
+.main {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 10px; /* Added margin to separate footer */
+}
+
+.info-message {
+    background-color: rgba(255, 255, 255, 0.8); /* Similar background as the form */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 183, 255, 0.5);
+    margin-top: 20px; /* Space above the info message */
+}
+
+
 .footer-bottom {
     text-align: center; /* Center the copyright text */
     font-size: 10px; /* Smaller font size */
     background-color: #004d40; /* Darker teal for footer */
     color: #ffffff;
     padding: 10px 0; /* Padding for footer */
+    margin-top: 30px; /* Added margin to the top of footer */
 }

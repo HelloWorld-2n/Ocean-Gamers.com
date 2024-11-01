@@ -73,7 +73,7 @@ main {
 }
 
 .welcome-section {
-    background-color: #101010;
+    background-color: #000000;
     padding: 30px;
     color: #00ffcc;
     border: 2px solid #333;
@@ -133,3 +133,57 @@ main {
     background-color: #009977;
     color: #ffffff;
 }
+
+.social-media {
+    margin: 20px 0;
+}
+/* Additional Styles for Quick Links and Contact Info */
+.info-container {
+    display: flex;
+    justify-content: space-evenly; /* Aligns quick links and contact info to the sides */
+    margin-top: 30px;
+    max-width: 1200px; /* Maximum width for the container */
+    margin: 30px auto; /* Center the container */
+}
+
+.quick-links, .contact-info {
+    background: rgba(0, 128, 128, 0.7); /* Teal background for the sections */
+    color: #fff; /* White text color */
+    padding: 20px; /* Padding inside the sections */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 183, 255, 0.5); /* Soft blue shadow */
+    width: 48%; /* Make sections take up nearly half the container */
+}
+
+.quick-links h2, .contact-info h2 {
+    margin-bottom: 15px; 
+    color: black;/* Space between title and content */
+}
+
+.quick-links ul, .contact-info p {
+    list-style: none; /* Remove bullet points */
+    color: #00ffff;
+}
+
+.quick-links ul li, .contact-info p {
+    margin: 10px 0; /* Space between items */
+}
+
+.quick-links a, .contact-info a {
+    color: #ffffff; /* White color for links */
+    text-decoration: none; /* No underline */
+    background-color: rgb(247, 0, 255);
+}
+
+.quick-links a:hover, .contact-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+.footer-bottom {
+    text-align: center; /* Center the copyright text */
+    font-size: 10px; /* Smaller font size */
+    background-color: #004d40; /* Darker teal for footer */
+    color: #ffffff;
+    padding: 10px 0; /* Padding for footer */
+    margin-top: 30px; /* Added margin to the top of footer */
+}
+
